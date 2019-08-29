@@ -1,0 +1,30 @@
+<div class="container">
+        <h1>Details of {{employees.name}}</h1>
+        <table class="table">
+        <tr>
+        <td>Employee Code</td>
+        <td>{{employees.code}}</td>
+        </tr>
+        
+        <tr>
+        <td>Name</td>
+        <td>{{employees.name}}</td>
+        </tr>
+        
+        <tr>
+        <td>Gender</td>
+        <td>{{employees.gender}}</td>
+        </tr>
+        
+        <tr>
+        <td>Annual Salary</td>
+        <td>{{employees.annualSalary}}</td>
+        </tr>
+        
+        <tr>
+        <td>Date Of Birth</td>
+        <td>{{employees.dateOfBirth}}</td>
+        </tr>
+        </table>
+        <button type="submit" class="btn btn-danger" (click)='navigate()'>Go Back to Employee List</button>
+       </div>

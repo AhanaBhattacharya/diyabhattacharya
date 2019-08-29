@@ -1,0 +1,32 @@
+<div class='container'>
+    <br>
+    <br>
+    <form #userForm='ngForm' (ngSubmit)="search(userForm.value)">
+            Search:  <input type="text" name="searchTerm" ngModel/>
+&nbsp;
+    <button type="submit" class="btn btn-info" (click)=search(searchTerm)>Search</button>
+</form>
+    <br>
+    <br>
+    <table class="table">
+        <tr>
+            <th>Employee code</th>                                                                    
+            <th>Employee name</th>
+            <th>Employee gender</th>
+            <th>Employee salary</th>
+            <th>Employee dob</th>
+
+        
+        <tr *ngFor="let emp of employees">
+            <td>{{emp.code}}</td>
+            <td>{{emp.name}}</td>
+
+            <td>{{emp.gender}}</td>
+
+            <td>{{emp.annualSalary}}</td>
+
+            <td>{{emp.dateOfBirth}}</td>
+            
+</tr>
+    </table>
+</div>
